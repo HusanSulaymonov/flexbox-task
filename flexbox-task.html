@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Flexbox-task</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             .navbar {
                 display: flex;
@@ -32,6 +33,15 @@
                 .navbar {
                     flex-direction: column;
                     align-items: center;
+                }
+                
+                .navbar ul {
+                    flex-direction: column;
+                    padding: 0;
+                    text-align: center;
+                }
+                .navbar ul li {
+                    margin: 10px 0;
                 }
 
                 .nav-links {
