@@ -8,11 +8,6 @@
     margin-top: 20px;
 }
 
-.navbar a {
-    color: white;
-    text-decoration: none;
-}
-
 .nav-links {
     list-style: none;
     display: flex;
@@ -23,6 +18,7 @@
     color: red;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
 }
 
 img {
@@ -33,17 +29,27 @@ img {
 }
 
 @media (max-width: 768px) {
+
     .navbar {
         flex-direction: column;
         align-items: center;
     }
 
     .navbar ul {
-        display: flex;
         flex-direction: column;
         text-align: center;
+        padding: 0;
     }
 
+    .navbar ul li {
+        margin: 10px 0;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
     img {
         align-self: center;
     }
+}
